@@ -15,3 +15,5 @@ rapidfuzz>=3.6.0
 # Procesamiento de datos y tablas
 pandas>=2.1.0
 playwright
+
+@ playwright install chromium
