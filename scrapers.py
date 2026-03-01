@@ -95,6 +95,15 @@ def buscar_selectos(texto_usuario, categoria=None):
     Scraping de Super Selectos con Playwright (headless Chromium).
     El sitio usa Blazor WebAssembly, necesita JS rendering completo.
     """
+    import subprocess, shutil
+    # Auto-instalar Chromium si no esta disponible (necesario en Streamlit Cloud)
+    if not shutil.which("chromium") and not shutil.which("chromium-browser"):
+        try:
+            subprocess.run(["playwright", "install", "--with-deps", "chromium"],
+                           check=True, capture_output=True, timeout=120)
+        except Exception:
+            pass
+
     from playwright.sync_api import sync_playwright
     from bs4 import BeautifulSoup
 

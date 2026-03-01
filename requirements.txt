@@ -1,19 +1,7 @@
-# SuperBarato SV - Dependencias del proyecto
-# ============================================
-
-# Framework web para la interfaz
 streamlit>=1.30.0
-
-# Scraping de páginas web (se usarán en pasos futuros)
 requests>=2.31.0
 beautifulsoup4>=4.12.0
 lxml>=5.0.0
-
-# Matching fuzzy de nombres de productos
 rapidfuzz>=3.6.0
-
-# Procesamiento de datos y tablas
 pandas>=2.1.0
 playwright
-
-@ playwright install chromium

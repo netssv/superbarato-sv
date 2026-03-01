@@ -1,4 +1,3 @@
-# Dependencias del sistema necesarias para que Playwright headless funcione en Streamlit Cloud
 libnss3
 libxss1
 libasound2
