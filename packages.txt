@@ -1,1 +1,8 @@
-packages.txt
+# Dependencias del sistema necesarias para que Playwright headless funcione en Streamlit Cloud
+libnss3
+libxss1
+libasound2
+libatk-bridge2.0-0
+libgtk-3-0
+libgbm1
+libx11-xcb1
